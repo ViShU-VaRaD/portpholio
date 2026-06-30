@@ -354,6 +354,12 @@ function initTerminalController() {
     });
 }
 
+/**
+ * Loads a specified tab/file archive into the terminal content screen.
+ * Triggers fade transitions, injects responsive templates, and executes shell scripts.
+ * 
+ * @param {string} fileKey - Key of the archive template to compile
+ */
 function loadTab(fileKey) {
     const mainContent = document.getElementById("terminal-content");
     if (!mainContent) return;
