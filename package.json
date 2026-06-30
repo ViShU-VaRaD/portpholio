@@ -1,0 +1,11 @@
+{
+  "name": "aether-portfolio",
+  "version": "1.0.0",
+  "description": "Interactive 3D Dark Ambient Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y live-server --port=8080 --no-browser"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

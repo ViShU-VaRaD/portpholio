@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="THRESHOLD - Creative Developer & Designer Terminal Archive. System connection online.">
+    <title>THRESHOLD // Terminal Archive</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Spline Viewer Web Component -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+</head>
+<body>
+
+    <!-- Film Grain Overlay -->
+    <div class="film-grain"></div>
+
+    <!-- Spotlight Overlay -->
+    <div class="spotlight"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-outline" id="cursor-outline"></div>
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+
+    <!-- Top Navigation HUD -->
+    <header class="hud-navbar">
+        <div class="hud-nav-container">
+            <div class="hud-top-left">
+                <span class="hud-glyph">▽</span>
+            </div>
+            
+            <nav class="hud-menu">
+                <a href="#home" class="hud-link active">[ ACCESS TERMINAL ]</a>
+                <a href="#console" class="hud-link">[ PROJECT ARCHIVES ]</a>
+                <a href="#console" class="hud-link">[ BIO ARCHIVE ]</a>
+                <a href="#console" class="hud-link">[ CONTACT ]</a>
+            </nav>
+            
+            <div class="hud-top-right">
+                <button class="hud-btn" id="btn-reset" aria-label="Reset System"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+                <button class="hud-btn" id="btn-fullscreen" aria-label="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="spline-wrapper">
+                <spline-viewer url="https://prod.spline.design/o4KqJgESj0BHbXFK/scene.splinecode"></spline-viewer>
+            </div>
+            
+            <div class="hero-overlay">
+                <div class="hero-inner">
+                    <h1 class="hero-title">WELCOME TO MY PORTFOLIO</h1>
+                    <div class="hero-line"></div>
+                    <p class="hero-subtitle">FORM FOLLOWS FUNCTION OR GN UNKNOWN</p>
+                    <div class="hero-action">
+                        <a href="#console" class="btn-terminal">[ JOIN THE HARVEST ]</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="canvas-focus-hint">
+                <span>Press on the canvas to focus and interact</span>
+            </div>
+        </section>
+
+        <!-- Main Terminal Interface Section -->
+        <section id="console" class="console-section">
+            <div class="container">
+                <div class="terminal-window">
+                    
+                    <!-- Terminal Window Header -->
+                    <div class="terminal-header">
+                        <div class="terminal-header-left">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">guest@threshold:~/archives</span>
+                        </div>
+                        <div class="terminal-header-right">
+                            <span class="terminal-tag">[ SYS.CON.01 ]</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Terminal Window Body Grid -->
+                    <div class="terminal-body">
+                        <!-- Sidebar: Directory Tree -->
+                        <aside class="terminal-sidebar">
+                            <div class="sidebar-title">SYSTEM FILE EXPLORER</div>
+                            <ul class="directory-list">
+                                <li class="dir-item parent-dir">
+                                    <span class="dir-toggle"><i class="fa-solid fa-folder-open"></i> root/</span>
+                                    <ul class="sub-directory">
+                                        <li class="file-item active" data-file="about_bio">
+                                            <span class="file-icon"><i class="fa-solid fa-file-lines"></i></span> about_bio.md
+                                        </li>
+                                        <li class="file-item" data-file="education">
+                                            <span class="file-icon"><i class="fa-solid fa-graduation-cap"></i></span> education.log
+                                        </li>
+                                        <li class="dir-item">
+                                            <span class="dir-name"><i class="fa-solid fa-folder"></i> projects/</span>
+                                            <ul class="sub-directory">
+                                                <li class="file-item" data-file="proj_removal">
+                                                    <span class="file-icon"><i class="fa-solid fa-cube"></i></span> smart_removal.sys
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="file-item" data-file="skills_matrix">
+                                            <span class="file-icon"><i class="fa-solid fa-microchip"></i></span> skills_matrix.log
+                                        </li>
+                                        <li class="file-item" data-file="certifications">
+                                            <span class="file-icon"><i class="fa-solid fa-certificate"></i></span> certifications.log
+                                        </li>
+                                        <li class="file-item" data-file="transmission">
+                                            <span class="file-icon"><i class="fa-solid fa-paper-plane"></i></span> transmission.sh
+                                        </li>
+                                        <li class="file-item" data-file="download_resume">
+                                            <span class="file-icon"><i class="fa-solid fa-download"></i></span> download_resume.sh
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </aside>
+                        
+                        <!-- Main Panel: File Editor / Reader View -->
+                        <div class="terminal-main" id="terminal-content">
+                            <!-- Populated dynamically via app.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom HUD Status Bar -->
+    <footer class="hud-footer">
+        <div class="hud-footer-container">
+            <div class="hud-bottom-left" id="live-logs">
+                AUX DATA STREAM: [INITIALIZING...] // ADDR: 0x7FFF // NODE: ACTIVE
+            </div>
+            <div class="hud-bottom-right">
+                SYS.ACTIVATION.COMPLETE - ENERGY CONVERGING // v1.0.9
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+</body>
+</html>
