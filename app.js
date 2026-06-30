@@ -13,7 +13,7 @@ function getTerminalBar(level) {
 const ARCHIVE_TEMPLATES = {
     about_bio: () => `
         <div class="screen-header">
-            <div class="screen-meta">guest@threshold:~/archives/root/about_bio.md</div>
+            <div class="screen-meta">guest@varad:~/archives/root/about_bio.md</div>
             <h2 class="screen-title">System Bio Archive</h2>
         </div>
         <div class="screen-content">
@@ -51,7 +51,7 @@ const ARCHIVE_TEMPLATES = {
 
     education: () => `
         <div class="screen-header">
-            <div class="screen-meta">guest@threshold:~/archives/root/education.log</div>
+            <div class="screen-meta">guest@varad:~/archives/root/education.log</div>
             <h2 class="screen-title">Academic Qualifications</h2>
         </div>
         <div class="screen-content">
@@ -94,7 +94,7 @@ const ARCHIVE_TEMPLATES = {
     
     proj_removal: () => `
         <div class="screen-header">
-            <div class="screen-meta">guest@threshold:~/archives/root/projects/smart_removal.sys</div>
+            <div class="screen-meta">guest@varad:~/archives/root/projects/smart_removal.sys</div>
             <h2 class="screen-title">Smart Object Removal Tool</h2>
         </div>
         <div class="screen-content">
@@ -120,7 +120,7 @@ const ARCHIVE_TEMPLATES = {
     
     skills_matrix: () => `
         <div class="screen-header">
-            <div class="screen-meta">guest@threshold:~/archives/root/skills_matrix.log</div>
+            <div class="screen-meta">guest@varad:~/archives/root/skills_matrix.log</div>
             <h2 class="screen-title">System Diagnostic Log</h2>
         </div>
         <div class="screen-content">
@@ -182,7 +182,7 @@ const ARCHIVE_TEMPLATES = {
 
     certifications: () => `
         <div class="screen-header">
-            <div class="screen-meta">guest@threshold:~/archives/root/certifications.log</div>
+            <div class="screen-meta">guest@varad:~/archives/root/certifications.log</div>
             <h2 class="screen-title">Verified Certifications</h2>
         </div>
         <div class="screen-content">
@@ -210,18 +210,18 @@ const ARCHIVE_TEMPLATES = {
     
     contact_me: () => `
         <div class="screen-header">
-            <div class="screen-meta">guest@threshold:~/archives/root/contact_me.sh</div>
+            <div class="screen-meta">guest@varad:~/archives/root/contact_me.sh</div>
             <h2 class="screen-title">Contact Me</h2>
         </div>
         <div class="shell-interface">
             <div class="shell-log" id="shell-log">
-                // THRESHOLD QUANTUM COMM CHANNEL SECURED //
+                // VARAD QUANTUM COMM CHANNEL SECURED //
                 // STATUS: READY FOR SEND DISPATCH //
             </div>
             
             <form id="shell-form" class="shell-form" autocomplete="off">
                 <div class="shell-prompt">
-                    <span class="prompt-path">guest@threshold:~/contact</span><span class="prompt-dollar">$</span>
+                    <span class="prompt-path">guest@varad:~/contact</span><span class="prompt-dollar">$</span>
                     <span class="prompt-cmd">input-sender-name:</span>
                     <div class="shell-input-wrapper">
                         <input type="text" id="shell-name" class="shell-text-input" placeholder="type name..." required>
@@ -229,7 +229,7 @@ const ARCHIVE_TEMPLATES = {
                 </div>
                 
                 <div class="shell-prompt">
-                    <span class="prompt-path">guest@threshold:~/contact</span><span class="prompt-dollar">$</span>
+                    <span class="prompt-path">guest@varad:~/contact</span><span class="prompt-dollar">$</span>
                     <span class="prompt-cmd">input-sender-email:</span>
                     <div class="shell-input-wrapper">
                         <input type="email" id="shell-email" class="shell-text-input" placeholder="type email address..." required>
@@ -237,7 +237,7 @@ const ARCHIVE_TEMPLATES = {
                 </div>
                 
                 <div class="shell-prompt">
-                    <span class="prompt-path">guest@threshold:~/contact</span><span class="prompt-dollar">$</span>
+                    <span class="prompt-path">guest@varad:~/contact</span><span class="prompt-dollar">$</span>
                     <span class="prompt-cmd">input-message-body:</span>
                     <div class="shell-input-wrapper">
                         <textarea id="shell-message" class="shell-text-input shell-textarea" placeholder="type message details..." required></textarea>
@@ -251,7 +251,7 @@ const ARCHIVE_TEMPLATES = {
 
     download_resume: () => `
         <div class="screen-header">
-            <div class="screen-meta">guest@threshold:~/archives/root/download_resume.sh</div>
+            <div class="screen-meta">guest@varad:~/archives/root/download_resume.sh</div>
             <h2 class="screen-title">Executing download_resume.sh</h2>
         </div>
         <div class="screen-content">
