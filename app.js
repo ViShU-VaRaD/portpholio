@@ -208,10 +208,10 @@ const ARCHIVE_TEMPLATES = {
         </div>
     `,
     
-    transmission: () => `
+    contact_me: () => `
         <div class="screen-header">
-            <div class="screen-meta">guest@threshold:~/archives/root/transmission.sh</div>
-            <h2 class="screen-title">Secure Communication Script</h2>
+            <div class="screen-meta">guest@threshold:~/archives/root/contact_me.sh</div>
+            <h2 class="screen-title">Contact Me</h2>
         </div>
         <div class="shell-interface">
             <div class="shell-log" id="shell-log">
@@ -221,7 +221,7 @@ const ARCHIVE_TEMPLATES = {
             
             <form id="shell-form" class="shell-form" autocomplete="off">
                 <div class="shell-prompt">
-                    <span class="prompt-path">guest@threshold:~/transmission</span><span class="prompt-dollar">$</span>
+                    <span class="prompt-path">guest@threshold:~/contact</span><span class="prompt-dollar">$</span>
                     <span class="prompt-cmd">input-sender-name:</span>
                     <div class="shell-input-wrapper">
                         <input type="text" id="shell-name" class="shell-text-input" placeholder="type name..." required>
@@ -229,7 +229,7 @@ const ARCHIVE_TEMPLATES = {
                 </div>
                 
                 <div class="shell-prompt">
-                    <span class="prompt-path">guest@threshold:~/transmission</span><span class="prompt-dollar">$</span>
+                    <span class="prompt-path">guest@threshold:~/contact</span><span class="prompt-dollar">$</span>
                     <span class="prompt-cmd">input-sender-email:</span>
                     <div class="shell-input-wrapper">
                         <input type="email" id="shell-email" class="shell-text-input" placeholder="type email address..." required>
@@ -237,14 +237,14 @@ const ARCHIVE_TEMPLATES = {
                 </div>
                 
                 <div class="shell-prompt">
-                    <span class="prompt-path">guest@threshold:~/transmission</span><span class="prompt-dollar">$</span>
+                    <span class="prompt-path">guest@threshold:~/contact</span><span class="prompt-dollar">$</span>
                     <span class="prompt-cmd">input-message-body:</span>
                     <div class="shell-input-wrapper">
                         <textarea id="shell-message" class="shell-text-input shell-textarea" placeholder="type message details..." required></textarea>
                     </div>
                 </div>
                 
-                <button type="submit" class="btn-execute">[ EXECUTE TRANSMISSION.SH ]</button>
+                <button type="submit" class="btn-execute">[ EXECUTE CONTACT_ME.SH ]</button>
             </form>
         </div>
     `,
@@ -374,7 +374,7 @@ function loadTab(fileKey) {
             mainContent.innerHTML = ARCHIVE_TEMPLATES[fileKey]();
             
             // Re-bind actions if contact/transmission form loaded
-            if (fileKey === "transmission") {
+            if (fileKey === "contact_me") {
                 initShellFormHandler();
             } else if (fileKey === "download_resume") {
                 // Trigger download programmatically
