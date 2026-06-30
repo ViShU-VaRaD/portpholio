@@ -1,6 +1,8 @@
-/* ==========================================
+/* ==========================================================================
+   PROJECT: Varad Dubey Portfolio Terminal Architecture
+   AUTHOR: Varad Dubey (github.com/ViShU-VaRaD)
    DESIGN SYSTEM - THRESHOLD DARK SCHEME
-   ========================================== */
+   ========================================================================== */
 :root {
     --bg-black: #050505;
     --bg-window: rgba(7, 7, 7, 0.88);
